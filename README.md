@@ -15,9 +15,9 @@ e verifique se em qual porta esta reconhecendo: eth0 ou eth1 ou enp11s0f0<br>
 -- dentro do arquivo adicione os comando<br>
 #the loopback network interface<br>
 
-auto enp11s0f0
-allow-hotplug enp11s0f0
-iface enp11s0f0 inet dhcp
+auto enp11s0f0<br>
+allow-hotplug enp11s0f0<br>
+iface enp11s0f0 inet dhcp<br>
 
 sudo /etc/init.d/networking restart
 
