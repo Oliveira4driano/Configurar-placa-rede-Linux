@@ -5,7 +5,7 @@ requisitos: utlizar o editor nano oi vim
 no terminal
 #verificar sua placa de rede
 ifconfig ou ip addr
-e verifique se em qual porta esta reconhecendo: eth0 ou eth1
+e verifique se em qual porta esta reconhecendo: eth0 ou eth1<br>
 
 
 -- entrar no diretorio
