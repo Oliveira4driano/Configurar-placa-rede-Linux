@@ -25,28 +25,26 @@ sudo /etc/init.d/networking restart
 
 Passo 5. Na linha
 
-iface enp0s3 inet static<br>
+iface enp11s0f0 inet static<br>
 
 , o arquivo diz que irá configurar a interface com DHCP, ou seja, para um endereço IP dinâmico. Então, ela tem que ser alterado para configurá-lo de maneira estática. Para isso, mude para esta linha:
-iface enp0s3 inet static
+iface enp0s3 inet static<br>
 
 Passo 6. Depois dessa linha, os seguintes parâmetros de conexão devem ser adicionados. Lembre-se de que esses parâmetros são um exemplo. Você precisa digitar os correspondentes para sua rede;
 
-Address
-Netmask
-Network
-Broadcast
-Gateway
-address 192.168.250.99
-netmask 255.255.255.0
-network 192.168.1.1
-broadcast 192.168.255.255
-gateway 192.168.1.1
-Passo 7. Em seguida, reinicie o serviço de rede;
+address 192.168.250.99<br>
+netmask 255.255.255.0<br>
+network 192.168.1.1<br>
+broadcast 192.168.255.255<br>
+gateway 192.168.1.1<br>
+
+
+
+Passo 7. Em seguida, reinicie o serviço de rede;<br>
 
 sudo systemctl restart networking
 
-Passo 8. Em seguida, verifique as alterações;
+Passo 8. Em seguida, verifique as alterações;<br>
 
 ip addr show
 
