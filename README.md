@@ -23,4 +23,6 @@ auto eth1
 allow-hotplug eth1
 iface eth1 inet dhcp
 
+sudo /etc/init.d/networking restart
+
 
